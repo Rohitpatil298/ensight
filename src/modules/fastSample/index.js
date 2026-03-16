@@ -1,0 +1,12 @@
+export { default as FastSampleDashboard } from './pages/FastSampleDashboard';
+export { AddDoctor } from './pages/AddDoctor';
+export { Agreement } from './pages/Agreement';
+export { default as DoctorRequest } from './pages/DoctorRequest';
+export { default as Users } from './pages/Users';
+export { default as EditUser } from './pages/EditUser';
+export { default as Products } from './pages/Products';
+export { default as AddProduct } from './pages/AddProduct';
+export { surveyApi } from './api';
+export { FastSampleLayout } from './layout/FastSampleLayout';
+export { FastSampleSidebar } from './layout/FastSampleSidebar';
+export { FastSampleHeader } from './layout/FastSampleHeader';
