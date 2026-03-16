@@ -61,7 +61,6 @@ export const adminRoutes = (
       <Route path="cron/view" element={<AgreementsDashboard />} />
       <Route path="fast-sample" element={<FastSampleDashboard />} />
       <Route path="cron/new" element={<AddAgreement />} />
-      <Route path="module-assign" element={<ModuleAssign />} />
       <Route path="cv/view" element={<CVDashboard />} />
       <Route path="user/view" element={<SalesTeamDashboard />} /></Route>
   </>

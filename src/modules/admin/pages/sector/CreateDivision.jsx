@@ -10,9 +10,9 @@ import {
   Stack,
 } from '@mui/material';
 import { Save, Cancel } from '@mui/icons-material';
-import { adminApi } from '../api';
-import { PageHeader } from '../../../shared/components/PageHeader';
-import { LoadingButton } from '../../../shared/components/LoadingButton';
+import { adminApi } from '../../api';
+import { PageHeader } from '../../../../shared/components/PageHeader';
+import { LoadingButton } from '../../../../shared/components/LoadingButton';
 
 export function CreateDivision() {
   const navigate = useNavigate();

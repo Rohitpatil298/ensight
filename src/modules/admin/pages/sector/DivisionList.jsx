@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Box, Button, Grid, alpha } from '@mui/material';
 import { Add } from '@mui/icons-material';
-import { adminApi } from '../api';
-import { DivisionCard } from '../components/DivisionCard';
-import { PageHeader } from '../../../shared/components/PageHeader';
-import { EmptyState } from '../../../shared/components/EmptyState';
-import { ListSkeleton } from '../../../shared/components/SkeletonLoader';
+import { adminApi } from '../../api';
+import { DivisionCard } from '../../components/DivisionCard';
+import { EmptyState } from '../../../../shared/components/EmptyState';
+import { PageHeader } from '../../../../shared/components/PageHeader';
+import { Loader } from '../../../../shared/components/SkeletonLoader';
 
 export function DivisionList() {
   const [divisions, setDivisions] = useState([]);
@@ -40,7 +40,7 @@ export function DivisionList() {
   };
 
   if (loading) {
-    return <ListSkeleton />;
+    return <Loader />;
   }
 
   return (

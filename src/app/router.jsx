@@ -55,10 +55,6 @@ const SalesTeamDashboard = lazyNamed(
   () => import("../modules/admin/pages/sales-team/SalesTeamDashboard"),
   "SalesTeamDashboard",
 );
-const ModuleAssign = lazyNamed(
-  () => import("../modules/admin/pages/module-assign/ModuleAssign"),
-  "ModuleAssign",
-);
 const AddNewSurvey = lazyNamed(
   () => import("../modules/admin/pages/survey/AddNewSurvey"),
   "AddNewSurvey",
@@ -197,7 +193,6 @@ const adminChildRoutes = [
   { path: "divisions/create", element: <CreateDivision /> },
   { path: "cv/view", element: <CVDashboard /> },
   { path: "user/view", element: <SalesTeamDashboard /> },
-  { path: "module-assign", element: <ModuleAssign /> },
   { path: "survey/new", element: <AddNewSurvey /> },
   { path: "dr/view", element: <AddNewDoctorDashboard /> },
   { path: "dr/new", element: <AddNewDoctor /> },
