@@ -376,9 +376,15 @@ export function AppRouter() {
         >
           {renderRouteDefinitions(fastSampleUserRoutes)}
         </Route>
-
+        <Route
+          path="users/survey"
+          element={
+            <ProtectedRoute>
+              <SurveyPage />
+            </ProtectedRoute>
+          }
+        />
         {renderRouteDefinitions(userEnsightRoutes)}
-
         <Route
           path="/MSA/user"
           element={
