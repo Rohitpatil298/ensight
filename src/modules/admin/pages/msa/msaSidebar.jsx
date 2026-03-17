@@ -19,9 +19,9 @@ export function Sidebar({ mobileOpen, onDrawerToggle }) {
 
   const menuItems = [
     { path: "/MSA/admin/welcome/dashboard", label: "Dashboard" },
-    { path: "/MSA/admin/welcome/dashboard", label: "MSA" },
-    { path: "/MSA/admin/welcome/dashboard", label: "SOW" },
-    { path: "/admin/dashboard", label: "Ensight" },
+    { path: "/MSA/admin/welcome/MSA/view", label: "MSA" },
+    { path: "/MSA/admin/welcome/SOW/view", label: "SOW" },
+    { path: "/admin/login", label: "Ensight" },
     { path: "/MSA/admin/login", label: "Other Division" },
   ];
 

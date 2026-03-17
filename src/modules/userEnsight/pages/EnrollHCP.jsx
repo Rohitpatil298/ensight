@@ -526,7 +526,7 @@
             </Box>
             </Paper>
         </Container>
-        <Box sx={{ position: "fixed", bottom: 16, right: 16 }}>
+        <Box sx={{ position: "fixed", zIndex: 5, bottom: 16, right: 16 }}>
             <Tooltip title="Add New HCP" arrow>
             <IconButton
                 sx={{

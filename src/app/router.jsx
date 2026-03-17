@@ -21,9 +21,7 @@ const AdminDashboard = lazy(
 const AdminLogin = lazy(
   () => import("../modules/admin/pages/dashboard/AdminLogin"),
 );
-const MSAAdminLogin = lazy(
-  () => import("../modules/admin/pages/msa/login"),
-);
+const MSAAdminLogin = lazy(() => import("../modules/admin/pages/msa/login"));
 const MSAAdminDashboardLayout = lazyNamed(
   () => import("../modules/admin/pages/msa/dashboardLayout"),
   "MSADashboardLayout",
@@ -123,7 +121,9 @@ const FastSampleUserLayout = lazyNamed(
   () => import("../modules/fastSample/layout/FastSampleUserLayout"),
   "FastSampleUserLayout",
 );
-const SurveyPage = lazy(() => import("../modules/userEnsight/pages/SurveyPage"));
+const SurveyPage = lazy(
+  () => import("../modules/userEnsight/pages/SurveyPage"),
+);
 const NonSurveyPage = lazy(
   () => import("../modules/userEnsight/pages/NonSurveyPage"),
 );
@@ -175,6 +175,8 @@ const FMVSurveyPage = lazy(
 const InviteDoctorForAggrement = lazy(
   () => import("../modules/userEnsight/pages/InviteDoctorForAggrement"),
 );
+const MSAView = lazy(() => import("../modules/admin/pages/msa/MSAView"));
+const SOWView = lazy(() => import("../modules/admin/pages/msa/SOWView"));
 
 const adminChildRoutes = [
   { path: "dashboard", element: <AdminDashboard /> },
@@ -185,7 +187,7 @@ const adminChildRoutes = [
   { path: "survey/:surveyId/questions", element: <SurveyQuestionsPage /> },
   { path: "survey/:surveyId/responses", element: <SurveyResponses /> },
   { path: "survey/:surveyId/auto-analyse", element: <SurveyAutoAnalyse /> },
-  { path: "survey/:surveyId/agreement-download", element: <SurveyAgreementDownload /> },
+  {path: "survey/:surveyId/agreement-download",element: <SurveyAgreementDownload />,},
   { path: "nonsurvey", element: <NonSurveyDashboard /> },
   { path: "division/view", element: <AdminUserDashboard /> },
   { path: "doctor/view", element: <DoctorDashboard /> },
@@ -264,6 +266,8 @@ const msaRoutes = [
 
 const msaAdminRoutes = [
   { path: "dashboard", element: <MSAAdminDashboard /> },
+  { path: "MSA/view", element: <MSAView /> },
+  { path: "SOW/view", element: <SOWView /> },
 ];
 
 function PageLoader() {

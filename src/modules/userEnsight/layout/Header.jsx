@@ -101,7 +101,7 @@ export function Header({ onMenuClick }) {
           <Box
             sx={{
               gap: { xs: 1.5, sm: 2 },
-              display: "flex",
+              // display: "flex",
               alignItems: "baseline",
               display: { xs: "none", sm: "flex" },
             }}
